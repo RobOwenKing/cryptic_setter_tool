@@ -2,6 +2,8 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
+const data = require('./data/data.json');
+
 it('renders something', () => {
   render(<App />);
   const e = screen.getByText(/bits and pieces/i);
@@ -19,7 +21,7 @@ it('returns relevant clues when passed a one-word string', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  /** * @todo Replace magic number with calculation based on data source */
+  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'A').length;
   expect(allResults.length).toBe(5);
 });
 it('should be case insensitive', () => {
@@ -32,7 +34,7 @@ it('should be case insensitive', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  /** * @todo Replace magic number with calculation based on data source */
+  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'A').length;
   expect(allResults.length).toBe(5);
 });
 it('returns relevant clues when passed a longer string', () => {
@@ -45,6 +47,6 @@ it('returns relevant clues when passed a longer string', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  /** * @todo Replace magic number with calculation based on data source */
+  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'TA').length;
   expect(allResults.length).toBe(5);
 });
