@@ -21,8 +21,8 @@ it('returns relevant clues when passed a one-word string', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'A').length;
-  expect(allResults.length).toBe(5);
+  const expectedCount = data['bitsAndPieces'].filter((e: any) => e.str === 'A').length;
+  expect(allResults.length).toBe(expectedCount);
 });
 it('should be case insensitive', () => {
   render(<App />);
@@ -34,8 +34,8 @@ it('should be case insensitive', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'A').length;
-  expect(allResults.length).toBe(5);
+  const expectedCount = data['bitsAndPieces'].filter((e: any) => e.str === 'A').length;
+  expect(allResults.length).toBe(expectedCount);
 });
 it('returns relevant clues when passed a longer string', () => {
   render(<App />);
@@ -47,6 +47,6 @@ it('returns relevant clues when passed a longer string', () => {
   expect(sampleResult).toBeInTheDocument();
 
   const allResults = screen.queryAllByRole('listitem');
-  const expectedCount = data['bitsAndPieces'].filter(e => e['str'] === 'TA').length;
-  expect(allResults.length).toBe(5);
+  const expectedCount = data['bitsAndPieces'].filter((e: any) => e.str === 'TA').length;
+  expect(allResults.length).toBe(expectedCount);
 });
