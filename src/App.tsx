@@ -24,6 +24,7 @@ const App = () => {
       </header>
       <main>
         <input aria-label="search-box" value={searchTerm} onChange={handleChange} />
+        {searchTerm === '' && <p>Search for something!</p>}
       </main>
     </div>
   );
