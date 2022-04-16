@@ -16,6 +16,16 @@ const App = () => {
     setSearchTerm(e.target.value);
   };
 
+  const searchResults = () => {
+    const results = data.current.filter((e: any) => e['str'] === searchTerm);
+
+    return (
+      <ul>
+        {results.map((r: any, id: any) => <li key={id}>{r['clue']}</li>)}
+      </ul>
+    )
+  };
+
   return (
     <div className="App">
       <header>
@@ -23,8 +33,11 @@ const App = () => {
         <h2>Bits and pieces ideas for cryptic crossword setters</h2>
       </header>
       <main>
-        <input aria-label="search-box" value={searchTerm} onChange={handleChange} />
-        {searchTerm === '' && <p>Search for something!</p>}
+        <>
+          <input aria-label="search-box" value={searchTerm} onChange={handleChange} />
+          {searchTerm === '' && <p>Search for something!</p>}
+          {searchTerm !== '' && searchResults()}
+        </>
       </main>
     </div>
   );
