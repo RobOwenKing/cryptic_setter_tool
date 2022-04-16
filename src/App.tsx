@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const fetchData = () => {
+  const data = require('./data/data.json');
+
+  return data['bitsAndPieces'];
+};
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const data = useRef(fetchData());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);

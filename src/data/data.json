@@ -1,0 +1,10 @@
+{
+  "bitsAndPieces": [
+    { "str": "A",  "clue": "Ace", "alt": "AI (for A-1)" },
+    { "str": "C",  "clue": "About", "eg": "circa" },
+    { "str": "CA", "clue": "About", "eg": "circa" },
+    { "str": "RE", "clue": "About" }
+  ]
+}
+
+
