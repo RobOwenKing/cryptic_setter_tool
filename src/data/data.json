@@ -1,11 +1,35 @@
 {
   "bitsAndPieces": [
     { "str": "A",  "clue": "Ace", "alt": "AI (for A-1)" },
+    { "str": "A", "clue": "Alfa", "eg": "ICAO phonetic alphabet" },
+    { "str": "B", "clue": "Bravo", "eg": "ICAO phonetic alphabet" },
     { "str": "C",  "clue": "About", "eg": "circa", "alt": "CA, RE" },
+    { "str": "C", "clue": "Charlie", "eg": "ICAO phonetic alphabet" },
     { "str": "CA", "clue": "About", "eg": "circa", "alt": "C, RE" },
+    { "str": "D", "clue": "Delta", "eg": "ICAO phonetic alphabet" },
+    { "str": "E", "clue": "Echo", "eg": "ICAO phonetic alphabet" },
+    { "str": "F", "clue": "Foxtrot", "eg": "ICAO phonetic alphabet" },
+    { "str": "G", "clue": "Golf", "eg": "ICAO phonetic alphabet" },
+    { "str": "H", "clue": "Hotel", "eg": "ICAO phonetic alphabet" },
+    { "str": "I", "clue": "India", "eg": "ICAO phonetic alphabet" },
+    { "str": "J", "clue": "Juliett", "eg": "ICAO phonetic alphabet" },
+    { "str": "K", "clue": "Kilo", "eg": "ICAO phonetic alphabet" },
+    { "str": "L", "clue": "Lima", "eg": "ICAO phonetic alphabet" },
+    { "str": "M", "clue": "Mike", "eg": "ICAO phonetic alphabet" },
+    { "str": "N", "clue": "November", "eg": "ICAO phonetic alphabet" },
+    { "str": "O", "clue": "Oscar", "eg": "ICAO phonetic alphabet" },
+    { "str": "P", "clue": "Papa", "eg": "ICAO phonetic alphabet" },
+    { "str": "Q", "clue": "Quebec", "eg": "ICAO phonetic alphabet" },
+    { "str": "R", "clue": "Romeo", "eg": "ICAO phonetic alphabet" },
     { "str": "RE", "clue": "About", "alt": "C, CA" },
-    { "str": "TA", "clue": "Thanks" }
+    { "str": "S", "clue": "Sierra", "eg": "ICAO phonetic alphabet" },
+    { "str": "T", "clue": "Tango", "eg": "ICAO phonetic alphabet" },
+    { "str": "TA", "clue": "Thanks" },
+    { "str": "U", "clue": "Uniform", "eg": "ICAO phonetic alphabet" },
+    { "str": "V", "clue": "Victor", "eg": "ICAO phonetic alphabet" },
+    { "str": "W", "clue": "Whiskey", "eg": "ICAO phonetic alphabet" },
+    { "str": "X", "clue": "X-Ray", "eg": "ICAO phonetic alphabet" },
+    { "str": "Y", "clue": "Yankee", "eg": "ICAO phonetic alphabet" },
+    { "str": "Z", "clue": "Zulu", "eg": "ICAO phonetic alphabet" }
   ]
 }
-
-

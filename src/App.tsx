@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>???</h1>
+        <h1>Crossword Bits</h1>
         <h2>Bits and pieces ideas for cryptic crossword setters</h2>
       </header>
       <main>
