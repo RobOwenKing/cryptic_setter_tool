@@ -17,7 +17,7 @@ const App = () => {
   };
 
   const searchResults = () => {
-    const results = data.current.filter((e: any) => e['str'] === searchTerm);
+    const results = data.current.filter((e: any) => e['str'] === searchTerm.toUpperCase());
 
     return (
       <ul>
